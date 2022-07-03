@@ -1,0 +1,49 @@
+.historia{
+    font-size: 12px;
+}
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+.persona{
+    transition: box-shadow 0.3s ease;
+    border: 1px solid #FF3C2C;
+    border-radius: 5px;
+    width: 25%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    transition: transform .25s ease; /* Animation */
+    background-color: #151E3F;
+
+
+    
+}
+.persona:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(255, 255, 255, 1) ;
+    transform: scale(1.4);
+
+}
+.persona img{
+    border-radius: 50%;
+    max-width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.persona h5,
+.persona h6{
+    margin: 0;
+    font-weight: normal;
+    color:#2e64a1
+}
+.persona h5{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.persona h6{
+    font-size: 11px;
+    font-style: italic;
+}
+.persona p{
+    color: rgb(196, 196, 196);
+    font-size: 0.8rem;
+}

@@ -1,0 +1,33 @@
+nav {
+  background-color: #151E3F;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  flex-grow: 1;
+}
+nav ul li a {
+  transition: all 0.5s, ease;
+  color: white;
+  text-decoration: none;
+  padding: 3px 6px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  margin: 2.5px;
+  background-color: #1d2955;
+}
+nav ul li a:hover {
+  background-color: rgb(40, 58, 122);
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+nav ul li a.activo {
+  background-color: #4c76a5;
+}

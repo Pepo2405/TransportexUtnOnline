@@ -1,0 +1,49 @@
+.bienvenidos{
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+.testimonios{
+    width: 25%;
+    color: white;
+
+
+}
+#avion{
+    border-radius: 10px;
+    width: 100%;
+}
+.columnas{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #C8EAFF;
+}
+.bienvenidos p{
+    font-size: 20px;
+    color: #C8EAFF;
+}
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    padding: 15px 5px;
+    font-size: 20px;
+    background-color: #638A06;
+    display: block;
+    border-radius: 4px;
+
+}
+.testimonio .cita:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(255, 255, 255, 0.3) ;
+
+}
+.testimonio .autor{
+    border-radius: 4px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(164, 201, 223);
+    display: block;
+    margin: 12px 0;
+}
