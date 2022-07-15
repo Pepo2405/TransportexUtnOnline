@@ -14,8 +14,8 @@ import NovedadesPage from "./pages/NovedadesPage";
 function App() {
   return (
     <div className="App">
-      <Header></Header>
       <BrowserRouter>
+      <Header></Header>
       <Nav/>
       
       <Routes>
