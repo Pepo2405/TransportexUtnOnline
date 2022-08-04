@@ -1,7 +1,6 @@
 nav {
   background-color: #151E3F;
   margin-bottom: 20px;
-  padding-bottom: 5px;
   width: 100%;
 }
 nav ul {
@@ -9,6 +8,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: flex-start;
 }
 nav ul li {
   flex-grow: 1;

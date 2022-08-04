@@ -1,7 +1,7 @@
 import '../styles/components/pages/NovedadesPage.css'
 const NovedadesPage = (props) => {
     return (
-        <section className="holder">
+        <section className="holder main">
             <h2>Novedades</h2>
             <div className="amogus">
             <h3>Amongus Cautivo</h3>

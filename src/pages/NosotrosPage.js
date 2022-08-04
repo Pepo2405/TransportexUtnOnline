@@ -1,7 +1,7 @@
 import '../styles/components/pages/NosotrosPage.css'
 const NosotrosPage = (props) => {
   return (
-    <main className="holder">
+    <main className="holder main">
       <div className="historia">
         <h2>Historia</h2>
         <p>Lore ipsum</p>
@@ -22,41 +22,52 @@ const NosotrosPage = (props) => {
           lobortis ligula pharetra eget.
         </p>
       </div>
-      <div className="staff">
         <h2>Staff</h2>
+      <div className="staff">
         <div className="personas">
           <div className="persona">
+            <div className='content'>
+            <span></span>
+            <div className="img">
             <img
               src="images/nosotros/nosotrosharle.jpg"
               alt="Juan gomes"
-              width="200px"
-              height="200px"
-            />
-            <h5>Elba Sura</h5>
-            <h6>Gerente General</h6>
+              />
+              </div>
+            <h4>Elba Sura</h4>
+            <h5>Gerente General</h5>
             <p>Condecorado heroe de guerra</p>
           </div>
-          <div className="persona">
+              </div>
+        <div className="persona">
+          <div className='content'>
+            <span></span>
+            <div className="img">
             <img
               src="images/nosotros/nosotrosharle2.jpg"
               alt="Ernesto Perez"
-              width="200px"
-              height="200px"
-            />
-            <h5>Esteban Quito</h5>
-            <h6>Supervisor Superior</h6>
+              />
+              </div>
+            <h4>Esteban Quito</h4>
+            <h5>Supervisor Superior</h5>
             <p>Luchador por los derechos de los niños</p>
-          </div><div className="persona">
+              </div>
+        </div>
+        <div className="persona">
+          <div className='content'>
+            <span></span>
+            <div className="img">
             <img
               src="images/nosotros/nosotrosharle3.jpg"
               alt="Juan gomes"
-              width="200px"
-              height="200px"
-            />
-            <h5>Aitor Menta</h5>
-            <h6>Contador Publico</h6>
+              />
+              </div>
+            <h4>Aitor Menta</h4>
+            <h5>Contador Publico</h5>
             <p>Contribuyente a la educacion</p>
           </div>
+          </div>
+          
         </div>
       </div>
     </main>

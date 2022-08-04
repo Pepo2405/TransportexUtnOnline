@@ -1,7 +1,7 @@
 import '../styles/components/pages/HomePage.css'
 const HomePage = (props) => {
   return (
-    <main className="holder">
+    <main className="holder main">
       <div className="homeimg">
         <img id='avion' src="/images/home/img01.jpg" alt="Avion"></img>
       </div>
@@ -26,16 +26,16 @@ const HomePage = (props) => {
         <div className="testimonios">
           <h2>Testimonios</h2>
           <div className="testimonio">
-            <span class="cita">Simplemente Excelente</span>
-            <span class="autor">Juan Perez - zapatos.com</span>
+            <span className="cita">Simplemente Excelente</span>
+            <span className="autor">Juan Perez - zapatos.com</span>
           </div>
           <div className="testimonio">
-            <span class="cita">Espectacular</span>
-            <span class="autor">Esteban Quito - Pantalones.com</span>
+            <span className="cita">Espectacular</span>
+            <span className="autor">Esteban Quito - Pantalones.com</span>
           </div>
           <div className="testimonio">
-            <span class="cita">Salvo mi matrimonio</span>
-            <span class="autor">Aitor Menta - Camiseta.com</span>
+            <span className="cita">Salvo mi matrimonio</span>
+            <span className="autor">Aitor Menta - Camiseta.com</span>
           </div>
         </div>
       </div>

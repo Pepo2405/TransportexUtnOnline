@@ -1,4 +1,15 @@
+.box {
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+html{
+  height: 100%;
+}
 body{
+  min-height: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -32,6 +43,28 @@ h2{
   color: white;
 }
 
+.header{
+  grid-area:header;
+}
+.navbar{
+  grid-area: navbar;
+  
+}
+.main{
+  grid-area: main;
+padding-top: 20px;  
+}
+
+
+.grid-container{
+  height: 100%;
+  display: grid;
+  grid-template:
+  "header" 130px
+  "navbar" 33px
+  "main"   auto
+  "footer" 100px ;
+}
 .App-link {
   color: #61dafb;
 }

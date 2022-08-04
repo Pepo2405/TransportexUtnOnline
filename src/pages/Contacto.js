@@ -1,25 +1,25 @@
 import '../styles/components/pages/ContactoPage.css'
 const ContactoPage = (props) => {
   return(
-  <main className="holder contacto-page"> 
+  <main className="holder contacto-page main"> 
   <div>
     <h2>Contacto rapido</h2>
     <form action="" method="" className="formulario">
       <p>
-        <label for="nombre">Nombre</label>
+        <label htmlFor="nombre">Nombre</label>
         <input type="text" name=""></input>
       </p>
       <p>
-        <label for="email">Email</label>
+        <label htmlFor="email">Email</label>
         <input type="text" name=""></input>
       </p>
       <p>
-        <label for="telefono">Telefono</label>
+        <label htmlFor="telefono">Telefono</label>
         <input type="text" name=""></input>
       </p>
       
       <p>
-        <label for="mensaje">Mensaje</label>
+        <label htmlFor="mensaje">Mensaje</label>
         <textarea name=""></textarea>
       </p>
       <p class="acciones">

@@ -13,19 +13,18 @@ import NovedadesPage from "./pages/NovedadesPage";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App grid-container">
       <BrowserRouter>
-      <Header></Header>
-      <Nav/>
-      
-      <Routes>
+      <Header className="header"></Header>
+      <Nav className="navbar"/>
+      <Routes className="main">
         <Route path="/" element={<HomePage/>}/>
         <Route path="/nosotros" element={<NosotrosPage/>}/>
         <Route path="/contacto" element={<ContactoPage/>}/>
         <Route path="/novedades" element={<NovedadesPage/>}/>
       </Routes>
       </BrowserRouter>
-      <Footer></Footer>
+      <Footer className="footer"></Footer>
     </div>
   );
 }

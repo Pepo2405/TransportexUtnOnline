@@ -3,7 +3,7 @@ import '../../styles/components/layout/Nav.css';
 const Nav = (props) => {
 
     return (
-        <nav>
+        <nav className="navbar">
             <div className="holder">
             <ul>
                 <li><NavLink to="/" className={({isActive}) => isActive ? "activo" :
