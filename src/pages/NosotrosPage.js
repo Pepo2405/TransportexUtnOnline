@@ -34,9 +34,11 @@ const NosotrosPage = (props) => {
               alt="Juan gomes"
               />
               </div>
+              <div className="persona-texto">
             <h4>Elba Sura</h4>
             <h5>Gerente General</h5>
             <p>Condecorado heroe de guerra</p>
+              </div>
           </div>
               </div>
         <div className="persona">
@@ -48,9 +50,12 @@ const NosotrosPage = (props) => {
               alt="Ernesto Perez"
               />
               </div>
+              <div className="persona-texto">
+
             <h4>Esteban Quito</h4>
             <h5>Supervisor Superior</h5>
             <p>Luchador por los derechos de los niños</p>
+              </div>
               </div>
         </div>
         <div className="persona">

@@ -10,16 +10,25 @@
 
 
 }
+
 #avion{
     border-radius: 10px;
-    width: 100%;
+    max-width: 95%;
 }
 .columnas{
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    color: #C8EAFF;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+
 }
+
+.columnas >*:nth-child(1){
+    flex: 1 1 70%;
+}
+.columnas >*:nth-child(2){
+    flex: 1 1 30%;
+}
+
 .bienvenidos p{
     font-size: 20px;
     color: #C8EAFF;
@@ -30,13 +39,15 @@
     padding: 15px 5px;
     font-size: 20px;
     background-color: #638A06;
-    display: block;
+    display: flex;
     border-radius: 4px;
+    justify-content: center;
 
+    
 }
 .testimonio .cita:hover{
-    box-shadow: 0 0.1rem 0.4rem rgba(255, 255, 255, 0.3) ;
-
+    box-shadow: 0 0.1rem 0.4rem 5px rgba(255, 255, 255, 0.3) ;
+    
 }
 .testimonio .autor{
     border-radius: 4px;
@@ -44,6 +55,45 @@
     color: rgb(255, 255, 255);
     text-align: center;
     background-color: rgb(164, 201, 223);
-    display: block;
+    display: flex;
+    justify-content: center;
+
     margin: 12px 0;
+}
+.testimonios h2{
+    margin-bottom: 15px;
+}
+
+
+@media (max-width:480px){
+    .columnas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .testimonios{
+        text-align: center;
+        display: flex;
+        flex: 1 1 100%;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 5px 20px 5px 20px;
+    
+    }
+    .testimonio .autor{
+        margin: 5px 0;
+        height: 25px;
+        text-align: center;
+        justify-content: center;
+    }
+    .testimonio > *{
+        display: flex;
+        justify-content: center;
+        text-transform: capitalize;
+    }
+    
 }

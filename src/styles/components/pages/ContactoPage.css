@@ -5,6 +5,9 @@
 .contacto div{
     width: 100%;
 }
+.datos > *{
+    margin-top: 4px;
+}
 .datos p{
     font-size: 14px;
     
@@ -16,6 +19,7 @@
 }
 .formulario p{
     display: flex;
+    margin: 8px;
 }
 .formulario p label{
     min-width: 80px;
@@ -52,4 +56,9 @@
 }
 .formulario input[type="submit"]:hover{
         background-color: #2e64a1;
+}
+.contacto-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }

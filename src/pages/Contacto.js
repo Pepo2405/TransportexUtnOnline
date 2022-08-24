@@ -22,12 +22,12 @@ const ContactoPage = (props) => {
         <label htmlFor="mensaje">Mensaje</label>
         <textarea name=""></textarea>
       </p>
-      <p class="acciones">
+      <p className="acciones">
         <input type="submit" value="Enviar"></input>
       </p>
     </form>
   </div>
-  <div  class="datos">
+  <div  className="datos">
     <h2>Otras vias de comunicacion</h2>
     <p>Tambien puede contactarse con nosotros usando
       los siguientes medios
