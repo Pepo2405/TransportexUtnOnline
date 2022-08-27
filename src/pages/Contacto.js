@@ -83,7 +83,7 @@ const ContactoPage = (props) => {
           {sending ? <p>Enviando</p>: null}
           {msg ? <p>{msg}</p>: null}
           <p className="acciones">
-            <input type="submit" value="Enviar"></input>
+            <input type="submit" value="Enviar" className="boton"></input>
           </p>
         </form>
       </div>

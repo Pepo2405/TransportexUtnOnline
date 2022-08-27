@@ -1,0 +1,21 @@
+.loader{
+    font-size: 150px;
+    animation: spin 4s linear infinite;
+  
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  
+  @media (max-width: 659px) {
+   
+    .loader{
+      font-size: 200px;
+      max-height: 200px;
+    }
+  }

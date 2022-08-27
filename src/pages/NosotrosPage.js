@@ -1,5 +1,31 @@
 import '../styles/components/pages/NosotrosPage.css'
+import '../styles/components/Loading.css'
+
+import EmpleadoItem from '../components/empleados/empleadoItem'
+import { useState, useEffect } from "react";
+import axios from "axios";
+import Loading from '../components/Loading'
+
+
+
 const NosotrosPage = (props) => {
+  const [loading, setLoading] = useState(false);
+  const [empleados, setEmpleados] = useState([]);
+  useEffect(() => {
+    const cargarEmpleados = async () => {
+      setLoading(true);
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/empleados`);
+      setEmpleados(response.data);
+      setLoading(false);
+
+    };
+
+    cargarEmpleados();
+  }, []);
+
+
+
+
   return (
     <main className="holder main">
       <div className="historia">
@@ -11,68 +37,21 @@ const NosotrosPage = (props) => {
           et magnis dis parturient montes, nascetur ridiculus mus. Duis cursus
           sapien ut diam laoreet porttitor. Interdum et malesuada fames ac ante
           ipsum primis in faucibus. Vestibulum risus sapien, rutrum nec mattis
-          aliquet, volutpat quis sapien. Praesent eget turpis a ligula venenatis
-          venenatis. Duis ante enim, dictum lobortis lectus vitae, scelerisque
-          porta justo. Praesent maximus nisl ut mauris cursus iaculis. Aliquam
-          erat volutpat. Suspendisse enim est, maximus a libero cursus, viverra
-          consequat sem. Suspendisse malesuada feugiat sapien, sit amet tempor
-          turpis aliquam ac. Morbi quis diam luctus, sollicitudin metus vel,
-          mattis eros. Aenean vulputate varius ante nec commodo. Curabitur at
-          ultricies quam, eu elementum risus. Donec porttitor tellus justo, nec
-          lobortis ligula pharetra eget.
         </p>
       </div>
         <h2>Staff</h2>
       <div className="staff">
         <div className="personas">
-          <div className="persona">
-            <div className='content'>
-            <span></span>
-            <div className="img">
-            <img
-              src="images/nosotros/nosotrosharle.jpg"
-              alt="Juan gomes"
-              />
-              </div>
-              <div className="persona-texto">
-            <h4>Elba Sura</h4>
-            <h5>Gerente General</h5>
-            <p>Condecorado heroe de guerra</p>
-              </div>
-          </div>
-              </div>
-        <div className="persona">
-          <div className='content'>
-            <span></span>
-            <div className="img">
-            <img
-              src="images/nosotros/nosotrosharle2.jpg"
-              alt="Ernesto Perez"
-              />
-              </div>
-              <div className="persona-texto">
-
-            <h4>Esteban Quito</h4>
-            <h5>Supervisor Superior</h5>
-            <p>Luchador por los derechos de los niños</p>
-              </div>
-              </div>
-        </div>
-        <div className="persona">
-          <div className='content'>
-            <span></span>
-            <div className="img">
-            <img
-              src="images/nosotros/nosotrosharle3.jpg"
-              alt="Juan gomes"
-              />
-              </div>
-            <h4>Aitor Menta</h4>
-            <h5>Contador Publico</h5>
-            <p>Contribuyente a la educacion</p>
-          </div>
-          </div>
-          
+          {loading ? (<Loading className="loader"/>) : empleados.map((empleado)=>(
+            <EmpleadoItem 
+            key={empleado.id} 
+            nombre={empleado.nombre}
+            puesto={empleado.puesto}
+            datos={empleado.datos}
+            foto={empleado.image}
+            />
+           
+          ))}  
         </div>
       </div>
     </main>
