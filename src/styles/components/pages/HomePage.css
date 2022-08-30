@@ -7,7 +7,7 @@
 .testimonios{
     width: 25%;
     color: white;
-
+ 
 
 }
 
@@ -52,13 +52,16 @@
 .testimonio .autor{
     border-radius: 4px;
     font-size: 15px;
-    color: rgb(255, 255, 255);
+    font-weight: 600;
+    color: #2e64a1;
     text-align: center;
-    background-color: rgb(164, 201, 223);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
-
+    height: 2rem;
     margin: 12px 0;
+    text-align: center;
+    padding-top: 0.4rem;
 }
 .testimonios h2{
     margin-bottom: 15px;
@@ -82,6 +85,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         margin: 5px 20px 5px 20px;
+        gap: 1rem;
     
     }
     .testimonio .autor{

@@ -1,6 +1,8 @@
 import "../styles/components/pages/ContactoPage.css";
 import axios from "axios";
 import { useState } from "react";
+import {BiAdjust,BiCheckCircle} from "react-icons/bi"
+import {AiFillFacebook,AiFillTwitterSquare,AiFillMail,AiFillPhone} from "react-icons/ai";
 
 const ContactoPage = (props) => {
   const initialForm = {
@@ -36,7 +38,7 @@ const ContactoPage = (props) => {
 
   return (
     <main className="holder contacto-page main">
-      <div>
+      <div className="form">
         <h2>Contacto rapido</h2>
         <form
           action="/contacto"
@@ -80,8 +82,8 @@ const ContactoPage = (props) => {
               onChange={handleChange}
             ></textarea>
           </p>
-          {sending ? <p>Enviando</p>: null}
-          {msg ? <p>{msg}</p>: null}
+          {sending ? <div className="contacto-enviando">Enviando <BiAdjust className="enviando-icono"/></div>: null}
+          {msg ? <div className="contacto-enviando">{msg} <BiCheckCircle/></div>: null}
           <p className="acciones">
             <input type="submit" value="Enviar" className="boton"></input>
           </p>
@@ -93,11 +95,10 @@ const ContactoPage = (props) => {
           Tambien puede contactarse con nosotros usando los siguientes medios
         </p>
         <ul>
-          <li>Telefono: 1123548796</li>
-          <li>Email: transporte@x.com</li>
-          <li>Facebook: Transporte X Facebook</li>
-          <li>Twitter: Transporte X twittero</li>
-          <li>Skype: Transporte SkypeX</li>
+          <li className="icono-contacto"><AiFillPhone /> 1123548796</li>
+          <li className="icono-contacto"><AiFillMail /> transporte@xmail.com</li>
+          <li className="icono-contacto"><AiFillFacebook /> Transporte X</li>
+          <li className="icono-contacto"><AiFillTwitterSquare/>Transporte X</li>
         </ul>
       </div>
     </main>

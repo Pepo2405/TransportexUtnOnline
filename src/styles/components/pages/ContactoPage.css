@@ -69,6 +69,28 @@
 ::placeholder{
     color: #8fc3ff;
 }
+.contacto-enviando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+.enviando-icono{
+    animation: spin 4s linear infinite;
+  
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+
+
 
 @media (max-width: 659px){
     .formulario p{
@@ -89,4 +111,36 @@
     .boton:active{
         scale: 0.98;
     }
+    
+       
+}
+.datos{display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;}
+
+.datos ul{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+.datos ul li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 1rem;
+
+}
+.icono-contacto:hover{
+    color: #8fc3ff;
+
+}
+.datos p{
+    font-size: 1.2rem;
+}
+.form h2{
+    padding-bottom: 1em;
+
 }
